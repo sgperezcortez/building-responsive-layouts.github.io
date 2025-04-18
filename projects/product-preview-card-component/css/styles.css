@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Primary */
+  --clr-primary-g500: hsl(158, 36%, 37%);
+  --clr-primary-g700: hsl(158, 42%, 18%);
+
+  /* Color neutral */
+  --clr-neutral-black: hsl(212, 21%, 14%);
+  --clr-neutral-grey: hsl(228, 12%, 48%);
+  --clr-neutral-cream: hsl(30, 38%, 92%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: var(--clr-neutral-grey);
+  font-size: clamp(0.7292rem, 0.6629rem + 0.2652vw, 0.875rem);
+  background-color: var(--clr-neutral-cream);
+}
+
+.product {
+  max-width: 375px;
+  margin-top:  2rem;
+  place-self: center;
+  background-color: var(--clr-neutral-white);
+  box-shadow: 0 0 40px -15px var(--clr-neutral-black);
+}
+
+.product__imgBox {
+  height: 35vh;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: url(../images/image-product-mobile.jpg);
+  background-size: cover;
+}
+
+.product__content {
+  padding: 1.5rem; 
+}
+
+.product__category {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.product__title,
+.price__discount {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.product__title {
+  font-size: clamp(2.0888rem, 2.0888rem + 0.2398vw, 2.1007rem);
+  color: var(--clr-primary-g700);
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+.product__description {
+  line-height: 1.25rem;
+  margin-top: 0.5rem; 
+  font-size: 0.95rem;
+}
+
+.product__prices {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: center;
+  }
+
+.price__discount {
+  color: var(--clr-primary-g500);
+  font-size: 2rem;
+}
+
+.price {
+  text-decoration: line-through; 
+  font-size: 1rem;
+}
+
+.product__cta {
+ background-color: var(--clr-primary-g500); 
+  color: var(--clr-neutral-white);
+  font-weight: 700;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  border: none;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .product {
+    max-width: 45vw;
+    display: flex;
+    border-radius: 1rem;
+    
+  }
+  
+  .product__imgBox, .product__content {
+    width: 50%;
+  }
+  
+  .product__imgBox {
+    height: auto;
+    background: url(../images/image-product-desktop.jpg);
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-size: cover;
+  }
+
+}
+
+.attribution {
+  margin: 1rem auto;  
+  font-size: 0.7rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
