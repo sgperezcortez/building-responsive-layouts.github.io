@@ -44,7 +44,8 @@ body {
 }
 
 .product__content {
-  padding: 1.5rem; 
+  padding: 2rem 1.5rem; 
+
 }
 
 .product__category {
@@ -61,12 +62,12 @@ body {
 .product__title {
   font-size: clamp(2.0888rem, 2.0888rem + 0.2398vw, 2.1007rem);
   color: var(--clr-primary-g700);
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   line-height: 2rem;
 }
 
 .product__description {
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   margin-top: 0.5rem; 
   font-size: 0.95rem;
 }
@@ -74,7 +75,7 @@ body {
 .product__prices {
     display: flex;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     align-items: center;
   }
 
@@ -89,14 +90,25 @@ body {
 }
 
 .product__cta {
- background-color: var(--clr-primary-g500); 
+  background-color: var(--clr-primary-g500); 
   color: var(--clr-neutral-white);
   font-weight: 700;
   width: 100%;
   border-radius: 0.5rem;
   padding: 1rem 0;
   border: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  gap: 1rem;
+}
+
+.product__cta:hover {
+  background-color: var(--clr-primary-g700);
 }
 
 @media screen and (min-width: 1000px) {
