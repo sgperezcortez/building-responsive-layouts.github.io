@@ -45,7 +45,6 @@ body {
 
 .product__content {
   padding: 2rem 1.5rem; 
-
 }
 
 .product__category {
@@ -102,9 +101,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  gap: 1rem;
 }
 
 .product__cta:hover {
@@ -116,7 +115,6 @@ body {
     max-width: 45vw;
     display: flex;
     border-radius: 1rem;
-    
   }
   
   .product__imgBox, .product__content {
